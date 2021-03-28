@@ -6,8 +6,10 @@ POST http://localhost:3003/api/blogs
 content-type: application/json
 
 {
-  "title": "Another String11",
-  "author": "Another String22",
-  "url": "http://yahoo.com",
-  "likes": "69"
+  "title": "sdkjfad",
+  "author": "Another3 String3",
+  "url": "http://ya5hoo23457.com"
 }
+
+###
+DELETE http://localhost:3003/api/blogs/60605521f9f6a05bb3e21be1
