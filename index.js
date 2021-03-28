@@ -1,9 +1,9 @@
-const app = require('./app');
+const app = require("./app");
 const http = require("http");
-const config = require('./utils/config')
+const config = require("./utils/config");
 const logger = require("./utils/logger");
 
-const server = http.createServer(app)
+const server = http.createServer(app);
 
 // Defining a logger
 const requestLogger = (request, response, next) => {
@@ -16,7 +16,8 @@ const requestLogger = (request, response, next) => {
 
 app.use(requestLogger);
 
-const PORT = config.port;
+const PORT = config.PORT;
+
 app.listen(PORT, () => {
   logger.info(`Server running on port ${PORT}`);
 });
